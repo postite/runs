@@ -1,0 +1,12 @@
+{
+    "name"         : "runs",
+    "url"          : "https://github.com/postite.com/runs",
+    "license"      : "MIT",
+    "tags"         : [],
+    "description"  : "run measurement helpers",
+    "version"      : "0.0.1",
+    "releasenote"  : "init",
+    "classPath"    : "src",
+    "contributors" : ["postite"],
+    "dependencies" : {"thx.core":""}
+}

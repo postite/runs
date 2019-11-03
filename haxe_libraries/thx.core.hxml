@@ -1,0 +1,4 @@
+-D thx.core=0.43.0
+# @install: lix --silent download "gh://github.com/postite/thx.core#1af6d983fd918d28741412a83688226ea26c8d2a" into thx.core/0.43.0/github/1af6d983fd918d28741412a83688226ea26c8d2a
+-cp ${HAXE_LIBCACHE}/thx.core/0.43.0/github/1af6d983fd918d28741412a83688226ea26c8d2a/src
+-D thx_core
