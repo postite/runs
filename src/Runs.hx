@@ -71,7 +71,10 @@ abstract Pace(Time) from Time to Time{
 		
 		return 1 / ((p.minutes * 60 + p.seconds)/3600);
 	}
-
+	@:to
+	public inline function toSeconds(p:Pace):Int{
+		return p.minutes*60 +p.seconds;
+	}
 
 @:from public static function fromString(s : String) : Pace {
     var pattern = ~/^([-+])?(?:(\d+)[.](\d{1,2})|(\d+))[:](\d{2})(?:[:](\d{2})(?:\.(\d+))?)?$/;
