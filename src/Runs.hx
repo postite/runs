@@ -77,7 +77,7 @@ abstract Pace(Time) from Time to Time{
 	}
 	@:to
 	public inline static function toMilliseconds(p:Pace):Int{
-		return p.minutes*60 +p.seconds*1000;
+		return p.minutes*60 +p.seconds*1000+p.milliseconds;
 	}
 
 @:from public static function fromString(s : String) : Pace {
