@@ -4,7 +4,7 @@
     "license"      : "MIT",
     "tags"         : [],
     "description"  : "run measurement helpers",
-    "version"      : "0.0.4",
+    "version"      : "0.0.5",
     "releasenote"  : "init",
     "classPath"    : "src",
     "contributors" : ["postite"],

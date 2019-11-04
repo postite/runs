@@ -68,12 +68,16 @@ abstract Pace(Time) from Time to Time{
 
 	@:to 
 	public inline static function toKm(p:Pace):Kmh{
-		
 		return 1 / ((p.minutes * 60 + p.seconds)/3600);
 	}
+	
 	@:to
 	public inline static function toSeconds(p:Pace):Int{
 		return p.minutes*60 +p.seconds;
+	}
+	@:to
+	public inline static function toMilliseconds(p:Pace):Int{
+		return p.minutes*60 +p.seconds*1000;
 	}
 
 @:from public static function fromString(s : String) : Pace {
