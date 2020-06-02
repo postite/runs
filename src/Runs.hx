@@ -59,8 +59,7 @@ abstract RunTime (Time) from Time to Time{
 @:observable
 @:forward
 @:forwardStatics
-abstract Pace(Time) from Time to Time{
-
+abstract Pace(Time) from Time to Time {
 
 	public function new(t:Time){
 		this = t;
@@ -117,6 +116,8 @@ abstract Pace(Time) from Time to Time{
       return time;
     }
 }
+	
+
 
  @:to public function toString() {
    var timeAbs = this.abs(),
@@ -134,7 +135,7 @@ decimals;
 abstract Kmh(Float) from Float to Float{
 
 	public function new(f:Float):Kmh{
-		return this=f;
+		 this=f;
 	}
 		@:to 
 		public function toPace():Pace{
